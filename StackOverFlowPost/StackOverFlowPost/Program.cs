@@ -32,13 +32,12 @@ namespace StackOverFlowPost
     }
 
 
-
     public class Post
     {
         private string title, description, createdBy;
         private int downVoteCount, upVoteCount = 0;
         private DateTime dateCreated;
-        List<Comment> Comments = new List<Comment> {};
+        List<Comment> Comments = new List<Comment> { };
 
 
         public Post(string postTitle, string postDescription, string postCreatedBy)
@@ -53,7 +52,7 @@ namespace StackOverFlowPost
 
             downVoteCount = 0;
 
-            upVoteCount = 0; 
+            upVoteCount = 0;
         }
 
 
@@ -62,23 +61,23 @@ namespace StackOverFlowPost
         public string CreatedBy { get; set; }
 
 
-        public int DownVoteCount { get;  }
+        public int DownVoteCount { get; }
         public int UpVoteCount { get; }
 
         public void VoteDown()
         {
-            downVoteCount++; 
+            downVoteCount++;
         }
-       
+
         public void VoteUp()
         {
             upVoteCount++;
         }
-        
+
 
         public int getCommentTotal()
         {
-            return Comments.Capacity - 1; 
+            return Comments.Capacity - 1;
         }
         public void AddComment(Comment newComment)
         {
@@ -87,7 +86,7 @@ namespace StackOverFlowPost
 
         public void PrintComments()
         {
-            foreach(var comment in Comments)
+            foreach (var comment in Comments)
             {
                 Console.WriteLine(comment.ToString());
             }
@@ -95,23 +94,26 @@ namespace StackOverFlowPost
 
         public override string ToString()
         {
-            return "Title: " + title + " \nDescription: " + description 
+            return "Title: " + title + " \nDescription: " + description
                 + "\n Created By: "
-                + createdBy + " Up votes: " + upVoteCount + " Down votes: " + downVoteCount + " \n " + "\n" + dateCreated; 
+                + createdBy + " Up votes: " + upVoteCount + " Down votes: " + downVoteCount + " \n " + "\n" + dateCreated;
 
 
         }
     }
 
+
+
+
     public class Comment
     {
 
         private string description, createdBy;
-        private DateTime dateCreated; 
-        
+        private DateTime dateCreated;
 
 
-        public Comment( string commentDescription, string commentCreatedBy)
+
+        public Comment(string commentDescription, string commentCreatedBy)
         {
             description = commentDescription;
             createdBy = commentCreatedBy;
@@ -128,9 +130,12 @@ namespace StackOverFlowPost
         {
             return " \nDescription: " + description
                 + "\n Created By: "
-                + createdBy + "\n" + dateCreated; 
+                + createdBy + "\n" + dateCreated;
 
 
         }
     }
+
+
+
 }
