@@ -5,6 +5,7 @@ using System.Text;
 namespace StackOverFlowPost
 {
     /// <summary class = "Post">
+    /// Posts are used to discuss a topic
     /// The Post class was made to copy a stack over flow example. 
     /// You can create a post, change its title, change its description, and a user can comment on the post adding to the total amount.
     /// A Post can be upvoted and downvoted. 

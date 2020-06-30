@@ -30,10 +30,12 @@ namespace StackOverFlowPost
             post.VoteDown();
 
             //The ToString Method allows to print out the posts details
+            //
            Console.WriteLine(post.ToString());
            Console.WriteLine("Comment Total: " + post.getCommentTotal());
 
         //Prints the comments out one by one
+        //
            post.PrintComments();
 
          
