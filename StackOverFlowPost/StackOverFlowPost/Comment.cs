@@ -4,6 +4,11 @@ using System.Text;
 
 namespace StackOverFlowPost
 {
+
+    /// <summary class = "Comment">
+    /// The comment class is used to create a comment that has a description, a user, and a date it was created. 
+    /// A new comment can be added to a post or created separately.
+    /// </summary>
     public class Comment
     {
 

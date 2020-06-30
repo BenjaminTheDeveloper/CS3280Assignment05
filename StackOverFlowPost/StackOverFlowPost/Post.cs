@@ -4,6 +4,12 @@ using System.Text;
 
 namespace StackOverFlowPost
 {
+    /// <summary class = "Post">
+    /// The Post class was made to copy a stack over flow example. 
+    /// You can create a post, change its title, change its description, and a user can comment on the post adding to the total amount.
+    /// A Post can be upvoted and downvoted. 
+    /// The methods were meant to be named as precisely as possible to match what they do. 
+    /// </summary>
     public class Post
     {
         private string title, description, createdBy;
