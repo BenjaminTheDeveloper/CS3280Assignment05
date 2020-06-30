@@ -25,9 +25,7 @@
       The Comment class contains:
                 title, 
                 desciption,
-                createdBy,
-                upVoteCount,
-                downVoteCount     
+                createdBy    
       }
 
 # Methods
